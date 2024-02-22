@@ -1,0 +1,21 @@
+.menu {
+  width: max-content;
+  display: flex;
+  list-style-type: none;
+  &__item {
+    margin-right: 40px;
+    a {
+      display: flex;
+      height: 100%;
+      align-items: flex-end;
+      font-size: 12px;
+      text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

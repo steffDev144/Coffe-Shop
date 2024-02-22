@@ -1,9 +1,11 @@
-import MainPage from "./pages/main-page";
+// import MainPage from "./pages/main-page";
+import OurCoffeePage from "./pages/our-coffee-page";
 
 function App() {
   return (
     <div className="App">
-      <MainPage/>
+      {/*<MainPage/>*/}
+        <OurCoffeePage />
     </div>
   );
 }
