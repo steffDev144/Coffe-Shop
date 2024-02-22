@@ -1,0 +1,42 @@
+.main {
+  background: url("../../img/main_bg.jpg") center center/cover no-repeat;
+  padding: 180px 0 200px 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin: 18px auto 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
