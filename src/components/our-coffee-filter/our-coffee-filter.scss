@@ -30,8 +30,12 @@
       border-radius: 0 4px 4px 0;
     }
     &:hover {
-      box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
-      background: #fff;
+      background-color: #000;
+      color: #fff;
+    }
+    &_active {
+      background-color: #000;
+      color: #fff;
     }
   }
 }

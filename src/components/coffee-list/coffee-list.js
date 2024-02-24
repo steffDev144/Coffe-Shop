@@ -8,6 +8,7 @@ const coffeeList = (props) => {
         return (
             <CoffeeListItem
                 key={id}
+                id={id}
                 {...itemProps} />
         )
     })

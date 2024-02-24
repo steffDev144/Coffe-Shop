@@ -1,24 +1,26 @@
 import './our-coffee-single-main.scss';
-import coffeeImg from '../../img/coffee-img.png';
 import Beans from "../beans/beans";
+import {useParams} from "react-router-dom";
 
-const OurCoffeeSingleMain = () => {
+const OurCoffeeSingleMain = (props) => {
+    const {id} = useParams();
+    const item = props.data.filter(item => {
+       return item.id === Number(id);
+    });
     return (
         <section className="our-single">
-            <div className="container">
                 <div className="our-single__wrapper">
                     <div className="our-single__img">
-                        <img src={coffeeImg} alt="coffee-img"/>
+                        <img src={item[0].img.coffeeImg} alt="coffee-img"/>
                     </div>
                     <div className="our-single__right">
-                        <h3>About it</h3>
+                        <h3>{item[0].title}</h3>
                         <Beans color="black"/>
-                        <p>Country: <span>Brasil</span></p>
-                        <p>Description: <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
-                        <p>Price:<span className="our-single__price">16.99$</span></p>
+                        <p>Country: <span>{item[0].country}</span></p>
+                        <p>Description: <span>{item[0].description}</span></p>
+                        <p>Price: <span className="our-single__price">{item[0].price}</span></p>
                     </div>
                 </div>
-            </div>
         </section>
 )
 }

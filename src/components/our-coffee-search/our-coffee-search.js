@@ -12,6 +12,7 @@ class OurCoffeeSearch extends Component {
     onUpdateSearch = (e) => {
         const term = e.target.value;
         this.setState({term});
+        this.props.onUpdateTerm(term);
     }
 
     render() {
