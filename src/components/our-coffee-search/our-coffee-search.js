@@ -9,11 +9,16 @@ class OurCoffeeSearch extends Component {
         }
     }
 
+    onUpdateSearch = (e) => {
+        const term = e.target.value;
+        this.setState({term});
+    }
+
     render() {
         return(
             <div className="search">
                 <label htmlFor="search">Lookiing for</label>
-                <input type="text" id="search" placeholder="start typing here..."/>
+                <input onChange={this.onUpdateSearch} value={this.state.term} type="text" id="search" placeholder="start typing here..."/>
             </div>
         )
     }
