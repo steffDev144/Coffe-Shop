@@ -1,7 +1,8 @@
 import {Component} from 'react';
 import coffeeImg from './img/coffee-img.png';
 // import MainPage from "./pages/main-page";
-import OurCoffeePage from "./pages/our-coffee-page";
+// import OurCoffeePage from "./pages/our-coffee-page";
+import OurCoffeeSingle from "./pages/our-coffee-single";
 
 class App extends Component {
     constructor(props) {
@@ -15,11 +16,12 @@ class App extends Component {
         }
     }
   render() {
-    const {data} = this.state;
+    // const {data} = this.state;
     return (
       <div className="App">
           {/*<MainPage/>*/}
-          <OurCoffeePage data={data}/>
+          {/*<OurCoffeePage data={data}/>*/}
+          <OurCoffeeSingle />
       </div>
     );
   }

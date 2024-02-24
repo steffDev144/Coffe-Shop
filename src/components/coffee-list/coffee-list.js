@@ -12,9 +12,13 @@ const coffeeList = (props) => {
         )
     })
     return (
-        <ul className="coffee-list__wrapper">
-            {elements}
-        </ul>
+        <section className="coffee-list">
+            <div className="container">
+                <ul className="coffee-list__wrapper">
+                    {elements}
+                </ul>
+            </div>
+        </section>
     )
 }
 
